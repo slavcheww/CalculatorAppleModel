@@ -42,6 +42,21 @@ namespace Calculator.Controller
             return result.ToString();
         }
 
+        public static string DivideTwoNumbers(string firstNumber, string secondNumber, TextBox txtBox)
+        {
+            double firstNum = double.Parse(firstNumber);
+            double secondNum = double.Parse(secondNumber);
+
+            if (secondNum == 0)
+            {
+                throw new Exception("Can not divide by 0.");
+            }
+
+            double result = firstNum / secondNum;
+            txtBox.Text = result.ToString();
+            return result.ToString();
+        }
+
         public static void EnableButton(Button button)
         {
             button.Enabled = true;

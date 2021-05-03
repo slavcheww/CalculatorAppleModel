@@ -48,7 +48,17 @@ namespace Calculator
             }
             else if (isDivideButtonClicked)
             {
-
+                isDivideButtonClicked = false;
+                try
+                {
+                    textInput = Controller.Controller.DivideTwoNumbers(oldInput, textInput, resultTxtBox);
+                }
+                catch (Exception ex)
+                {
+                    resultTxtBox.Text = ex.Message;
+                    textInput = "0";
+                    oldInput = "0";
+                }
             }
             else if (isMultiplyButtonClicked)
             {
@@ -61,12 +71,16 @@ namespace Calculator
         {
             Controller.Controller.EnableButton(plusBtn);
             Controller.Controller.EnableButton(substractBtn);
+            Controller.Controller.EnableButton(divideBtn);
+            Controller.Controller.EnableButton(multipleBtn);
         }
 
         private void DisableAllButtons()
         {
             Controller.Controller.DisableButton(plusBtn);
             Controller.Controller.DisableButton(substractBtn);
+            Controller.Controller.DisableButton(divideBtn);
+            Controller.Controller.DisableButton(multipleBtn);
         }
 
         private void zeroBtn_Click(object sender, EventArgs e)
@@ -80,6 +94,7 @@ namespace Calculator
             {
                 textInput = "0";
                 Controller.Controller.ResetTextBoxText(resultTxtBox);
+                EnableAllButtons();
             }
         }
 
@@ -210,10 +225,11 @@ namespace Calculator
 
         private void deleteAllBtn_Click(object sender, EventArgs e)
         {
-                textInput = "0";
-                Controller.Controller.ResetTextBoxText(resultTxtBox);
-                isButtonClicked = false;
-                oldInput = "0";
+            textInput = "0";
+            Controller.Controller.ResetTextBoxText(resultTxtBox);
+            isButtonClicked = false;
+            oldInput = "0";
+            EnableAllButtons();
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
@@ -246,7 +262,11 @@ namespace Calculator
 
         private void divideBtn_Click(object sender, EventArgs e)
         {
+            DoTheCalculation();
             isButtonClicked = true;
+            oldInput = textInput;
+            isDivideButtonClicked = true;
+            DisableAllButtons();
         }
 
         private void multipleBtn_Click(object sender, EventArgs e)
