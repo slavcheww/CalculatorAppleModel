@@ -32,6 +32,9 @@ namespace Calculator
             isSubstractButtonClicked = false;
             isDivideButtonClicked = false;
             isMultiplyButtonClicked = false;
+            resultTxtBox.BorderStyle = BorderStyle.None;
+            resultTxtBox.ForeColor = Color.White;
+            resultTxtBox.TextAlign = HorizontalAlignment.Right;
         }
 
         private void DoTheCalculation()
