@@ -57,6 +57,27 @@ namespace Calculator.Controller
             return result.ToString();
         }
 
+        public static string MultipleTwoNumbers(string firstNumber, string secondNumber, TextBox txtBox)
+        {
+            double result = double.Parse(firstNumber) * double.Parse(secondNumber);
+            txtBox.Text = result.ToString();
+            return result.ToString();
+        }
+
+        public static string SquareRoot(string number, TextBox txtBox)
+        {
+            double result = Math.Sqrt(double.Parse(number));
+            txtBox.Text = result.ToString();
+            return result.ToString();
+        }
+
+        public static string PowerNumber(string number, TextBox txtBox)
+        {
+            double result = Math.Pow(double.Parse(number), 2);
+            txtBox.Text = result.ToString();
+            return result.ToString();
+        }
+
         public static void EnableButton(Button button)
         {
             button.Enabled = true;

@@ -62,7 +62,8 @@ namespace Calculator
             }
             else if (isMultiplyButtonClicked)
             {
-
+                textInput = Controller.Controller.MultipleTwoNumbers(oldInput, textInput, resultTxtBox);
+                isMultiplyButtonClicked = false;
             }
             
         }
@@ -73,6 +74,8 @@ namespace Calculator
             Controller.Controller.EnableButton(substractBtn);
             Controller.Controller.EnableButton(divideBtn);
             Controller.Controller.EnableButton(multipleBtn);
+            Controller.Controller.EnableButton(equalsBtn);
+            Controller.Controller.EnableButton(squareRootBtn);
         }
 
         private void DisableAllButtons()
@@ -81,11 +84,13 @@ namespace Calculator
             Controller.Controller.DisableButton(substractBtn);
             Controller.Controller.DisableButton(divideBtn);
             Controller.Controller.DisableButton(multipleBtn);
+            Controller.Controller.DisableButton(equalsBtn);
+            Controller.Controller.DisableButton(squareRootBtn);
         }
 
         private void zeroBtn_Click(object sender, EventArgs e)
         {
-            if (!Controller.Controller.CheckIfResultBoxIsEmpty(textInput))
+            if (!Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || textInput.Contains("."))
             {
                 resultTxtBox.Text += 0;
                 textInput += 0;
@@ -232,14 +237,16 @@ namespace Calculator
             EnableAllButtons();
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void squareRootBtn_Click(object sender, EventArgs e)
         {
+            DoTheCalculation();
+            textInput = Controller.Controller.SquareRoot(textInput, resultTxtBox);
+        }
 
+        private void powBtn_Click(object sender, EventArgs e)
+        {
+            DoTheCalculation();
+            textInput = Controller.Controller.PowerNumber(textInput, resultTxtBox);
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
@@ -271,12 +278,26 @@ namespace Calculator
 
         private void multipleBtn_Click(object sender, EventArgs e)
         {
+            DoTheCalculation();
             isButtonClicked = true;
+            oldInput = textInput;
+            isMultiplyButtonClicked = true;
+            DisableAllButtons();
         }
 
         private void equalsBtn_Click(object sender, EventArgs e)
         {
+            DoTheCalculation();
+        }
 
+        private void pointBtn_Click(object sender, EventArgs e)
+        {
+            if (!textInput.Contains("."))
+            {
+                textInput += ".";
+                resultTxtBox.Text += ",";
+            }
+            
         }
     }
 }

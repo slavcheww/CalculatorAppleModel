@@ -30,7 +30,7 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.deleteAllBtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
+            this.powBtn = new System.Windows.Forms.Button();
             this.squareRootBtn = new System.Windows.Forms.Button();
             this.sevenBtn = new System.Windows.Forms.Button();
             this.fourBtn = new System.Windows.Forms.Button();
@@ -64,18 +64,18 @@
             this.deleteAllBtn.UseVisualStyleBackColor = false;
             this.deleteAllBtn.Click += new System.EventHandler(this.deleteAllBtn_Click);
             // 
-            // deleteBtn
+            // powBtn
             // 
-            this.deleteBtn.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.deleteBtn.Location = new System.Drawing.Point(114, 109);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(96, 52);
-            this.deleteBtn.TabIndex = 1;
-            this.deleteBtn.Text = "C";
-            this.deleteBtn.UseVisualStyleBackColor = false;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            this.powBtn.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.powBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.powBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.powBtn.Location = new System.Drawing.Point(114, 109);
+            this.powBtn.Name = "powBtn";
+            this.powBtn.Size = new System.Drawing.Size(96, 52);
+            this.powBtn.TabIndex = 1;
+            this.powBtn.Text = "POW";
+            this.powBtn.UseVisualStyleBackColor = false;
+            this.powBtn.Click += new System.EventHandler(this.powBtn_Click);
             // 
             // squareRootBtn
             // 
@@ -231,6 +231,7 @@
             this.pointBtn.TabIndex = 13;
             this.pointBtn.Text = ",";
             this.pointBtn.UseVisualStyleBackColor = false;
+            this.pointBtn.Click += new System.EventHandler(this.pointBtn_Click);
             // 
             // equalsBtn
             // 
@@ -330,7 +331,7 @@
             this.Controls.Add(this.fourBtn);
             this.Controls.Add(this.sevenBtn);
             this.Controls.Add(this.squareRootBtn);
-            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.powBtn);
             this.Controls.Add(this.deleteAllBtn);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "Form1";
@@ -343,7 +344,7 @@
         #endregion
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button deleteAllBtn;
-        private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Button powBtn;
         private System.Windows.Forms.Button squareRootBtn;
         private System.Windows.Forms.Button sevenBtn;
         private System.Windows.Forms.Button fourBtn;
