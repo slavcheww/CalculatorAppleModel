@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -25,8 +18,7 @@ namespace Calculator
         {
             InitializeComponent();
             resultTxtBox.Text = "0";
-            textInput = "0";
-            oldInput = "0";
+            ResetInputs();
             isButtonClicked = false;
             isAddButtonClicked = false;
             isSubstractButtonClicked = false;
@@ -59,8 +51,7 @@ namespace Calculator
                 catch (Exception ex)
                 {
                     resultTxtBox.Text = ex.Message;
-                    textInput = "0";
-                    oldInput = "0";
+                    ResetInputs();
                 }
             }
             else if (isMultiplyButtonClicked)
@@ -91,6 +82,27 @@ namespace Calculator
             Controller.Controller.DisableButton(squareRootBtn);
         }
 
+        private void OnNumberClick()
+        {
+            textInput = string.Empty;
+            Controller.Controller.ClearTextBox(resultTxtBox);
+            isButtonClicked = false;
+            EnableAllButtons();
+        }
+
+        private void OnOperatorButtonClick()
+        {
+            DoTheCalculation();
+            isButtonClicked = true;
+            oldInput = textInput;
+        }
+
+        private void ResetInputs()
+        {
+            textInput = "0";
+            oldInput = "0";
+        }
+
         private void zeroBtn_Click(object sender, EventArgs e)
         {
             if (!Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || textInput.Contains("."))
@@ -110,10 +122,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
             resultTxtBox.Text += 1;
             textInput += 1;
@@ -123,10 +132,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 2;
@@ -137,10 +143,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 3;
@@ -151,10 +154,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 4;
@@ -165,10 +165,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 5;
@@ -179,10 +176,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 6;
@@ -193,10 +187,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 7;
@@ -207,10 +198,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 8;
@@ -221,10 +209,7 @@ namespace Calculator
         {
             if (Controller.Controller.CheckIfResultBoxIsEmpty(textInput) || isButtonClicked)
             {
-                textInput = string.Empty;
-                Controller.Controller.ClearTextBox(resultTxtBox);
-                isButtonClicked = false;
-                EnableAllButtons();
+                OnNumberClick();
             }
 
             resultTxtBox.Text += 9;
@@ -233,10 +218,9 @@ namespace Calculator
 
         private void deleteAllBtn_Click(object sender, EventArgs e)
         {
-            textInput = "0";
+            ResetInputs();
             Controller.Controller.ResetTextBoxText(resultTxtBox);
             isButtonClicked = false;
-            oldInput = "0";
             EnableAllButtons();
         }
 
@@ -254,36 +238,28 @@ namespace Calculator
 
         private void plusBtn_Click(object sender, EventArgs e)
         {
-            DoTheCalculation();  
-            isButtonClicked = true;
-            oldInput = textInput;
+            OnOperatorButtonClick();
             isAddButtonClicked = true;
             DisableAllButtons();
         }
 
         private void substractBtn_Click(object sender, EventArgs e)
         {
-            DoTheCalculation();
-            isButtonClicked = true;
-            oldInput = textInput;
+            OnOperatorButtonClick();
             isSubstractButtonClicked = true;
             DisableAllButtons();
         }
 
         private void divideBtn_Click(object sender, EventArgs e)
         {
-            DoTheCalculation();
-            isButtonClicked = true;
-            oldInput = textInput;
+            OnOperatorButtonClick();
             isDivideButtonClicked = true;
             DisableAllButtons();
         }
 
         private void multipleBtn_Click(object sender, EventArgs e)
         {
-            DoTheCalculation();
-            isButtonClicked = true;
-            oldInput = textInput;
+            OnOperatorButtonClick();
             isMultiplyButtonClicked = true;
             DisableAllButtons();
         }
