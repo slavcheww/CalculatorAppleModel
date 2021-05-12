@@ -59,7 +59,7 @@
             this.deleteAllBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteAllBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.deleteAllBtn.Location = new System.Drawing.Point(13, 122);
-            this.deleteAllBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteAllBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteAllBtn.Name = "deleteAllBtn";
             this.deleteAllBtn.Size = new System.Drawing.Size(108, 58);
             this.deleteAllBtn.TabIndex = 0;
@@ -74,7 +74,7 @@
             this.powBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.powBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.powBtn.Location = new System.Drawing.Point(129, 122);
-            this.powBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.powBtn.Margin = new System.Windows.Forms.Padding(4);
             this.powBtn.Name = "powBtn";
             this.powBtn.Size = new System.Drawing.Size(108, 58);
             this.powBtn.TabIndex = 1;
@@ -89,7 +89,7 @@
             this.squareRootBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.squareRootBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.squareRootBtn.Location = new System.Drawing.Point(243, 122);
-            this.squareRootBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.squareRootBtn.Margin = new System.Windows.Forms.Padding(4);
             this.squareRootBtn.Name = "squareRootBtn";
             this.squareRootBtn.Size = new System.Drawing.Size(108, 58);
             this.squareRootBtn.TabIndex = 2;
@@ -104,7 +104,7 @@
             this.sevenBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sevenBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sevenBtn.Location = new System.Drawing.Point(13, 188);
-            this.sevenBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sevenBtn.Margin = new System.Windows.Forms.Padding(4);
             this.sevenBtn.Name = "sevenBtn";
             this.sevenBtn.Size = new System.Drawing.Size(108, 58);
             this.sevenBtn.TabIndex = 3;
@@ -119,7 +119,7 @@
             this.fourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fourBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fourBtn.Location = new System.Drawing.Point(13, 253);
-            this.fourBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fourBtn.Margin = new System.Windows.Forms.Padding(4);
             this.fourBtn.Name = "fourBtn";
             this.fourBtn.Size = new System.Drawing.Size(108, 58);
             this.fourBtn.TabIndex = 4;
@@ -134,7 +134,7 @@
             this.oneBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.oneBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.oneBtn.Location = new System.Drawing.Point(13, 319);
-            this.oneBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.oneBtn.Margin = new System.Windows.Forms.Padding(4);
             this.oneBtn.Name = "oneBtn";
             this.oneBtn.Size = new System.Drawing.Size(108, 58);
             this.oneBtn.TabIndex = 5;
@@ -149,7 +149,7 @@
             this.eightBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eightBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.eightBtn.Location = new System.Drawing.Point(129, 188);
-            this.eightBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eightBtn.Margin = new System.Windows.Forms.Padding(4);
             this.eightBtn.Name = "eightBtn";
             this.eightBtn.Size = new System.Drawing.Size(108, 58);
             this.eightBtn.TabIndex = 6;
@@ -164,7 +164,7 @@
             this.fiveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fiveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fiveBtn.Location = new System.Drawing.Point(129, 253);
-            this.fiveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fiveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.fiveBtn.Name = "fiveBtn";
             this.fiveBtn.Size = new System.Drawing.Size(108, 58);
             this.fiveBtn.TabIndex = 7;
@@ -179,7 +179,7 @@
             this.twoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.twoBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.twoBtn.Location = new System.Drawing.Point(129, 319);
-            this.twoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.twoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.twoBtn.Name = "twoBtn";
             this.twoBtn.Size = new System.Drawing.Size(108, 58);
             this.twoBtn.TabIndex = 8;
@@ -194,7 +194,7 @@
             this.nineBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nineBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nineBtn.Location = new System.Drawing.Point(243, 188);
-            this.nineBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nineBtn.Margin = new System.Windows.Forms.Padding(4);
             this.nineBtn.Name = "nineBtn";
             this.nineBtn.Size = new System.Drawing.Size(108, 58);
             this.nineBtn.TabIndex = 9;
@@ -209,7 +209,7 @@
             this.sixBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sixBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sixBtn.Location = new System.Drawing.Point(243, 253);
-            this.sixBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sixBtn.Margin = new System.Windows.Forms.Padding(4);
             this.sixBtn.Name = "sixBtn";
             this.sixBtn.Size = new System.Drawing.Size(108, 58);
             this.sixBtn.TabIndex = 10;
@@ -224,7 +224,7 @@
             this.threeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.threeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.threeBtn.Location = new System.Drawing.Point(243, 319);
-            this.threeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.threeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.threeBtn.Name = "threeBtn";
             this.threeBtn.Size = new System.Drawing.Size(108, 58);
             this.threeBtn.TabIndex = 11;
@@ -239,7 +239,7 @@
             this.zeroBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zeroBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.zeroBtn.Location = new System.Drawing.Point(13, 383);
-            this.zeroBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zeroBtn.Margin = new System.Windows.Forms.Padding(4);
             this.zeroBtn.Name = "zeroBtn";
             this.zeroBtn.Size = new System.Drawing.Size(222, 58);
             this.zeroBtn.TabIndex = 12;
@@ -254,7 +254,7 @@
             this.pointBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pointBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pointBtn.Location = new System.Drawing.Point(243, 383);
-            this.pointBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pointBtn.Margin = new System.Windows.Forms.Padding(4);
             this.pointBtn.Name = "pointBtn";
             this.pointBtn.Size = new System.Drawing.Size(108, 58);
             this.pointBtn.TabIndex = 13;
@@ -269,7 +269,7 @@
             this.equalsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equalsBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.equalsBtn.Location = new System.Drawing.Point(357, 122);
-            this.equalsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.equalsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.equalsBtn.Name = "equalsBtn";
             this.equalsBtn.Size = new System.Drawing.Size(108, 58);
             this.equalsBtn.TabIndex = 14;
@@ -284,7 +284,7 @@
             this.substractBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.substractBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.substractBtn.Location = new System.Drawing.Point(357, 319);
-            this.substractBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.substractBtn.Margin = new System.Windows.Forms.Padding(4);
             this.substractBtn.Name = "substractBtn";
             this.substractBtn.Size = new System.Drawing.Size(108, 58);
             this.substractBtn.TabIndex = 15;
@@ -299,7 +299,7 @@
             this.multipleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multipleBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.multipleBtn.Location = new System.Drawing.Point(357, 188);
-            this.multipleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.multipleBtn.Margin = new System.Windows.Forms.Padding(4);
             this.multipleBtn.Name = "multipleBtn";
             this.multipleBtn.Size = new System.Drawing.Size(108, 58);
             this.multipleBtn.TabIndex = 15;
@@ -314,7 +314,7 @@
             this.divideBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divideBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.divideBtn.Location = new System.Drawing.Point(357, 253);
-            this.divideBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.divideBtn.Margin = new System.Windows.Forms.Padding(4);
             this.divideBtn.Name = "divideBtn";
             this.divideBtn.Size = new System.Drawing.Size(108, 58);
             this.divideBtn.TabIndex = 16;
@@ -329,7 +329,7 @@
             this.plusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plusBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.plusBtn.Location = new System.Drawing.Point(357, 383);
-            this.plusBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.plusBtn.Margin = new System.Windows.Forms.Padding(4);
             this.plusBtn.Name = "plusBtn";
             this.plusBtn.Size = new System.Drawing.Size(108, 58);
             this.plusBtn.TabIndex = 17;
@@ -343,11 +343,12 @@
             this.resultTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultTxtBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.resultTxtBox.Location = new System.Drawing.Point(13, 53);
-            this.resultTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resultTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.resultTxtBox.Name = "resultTxtBox";
             this.resultTxtBox.ReadOnly = true;
             this.resultTxtBox.Size = new System.Drawing.Size(451, 61);
             this.resultTxtBox.TabIndex = 18;
+            this.resultTxtBox.TabStop = false;
             // 
             // Form1
             // 
@@ -379,7 +380,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
